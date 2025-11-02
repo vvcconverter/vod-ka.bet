@@ -4,8 +4,8 @@ const CORE_ASSETS = [
   "/index.html",
   "/assets/js/script.js",
   "/assets/js/vodka.js",
-  "/assets/images/vod-ka.bet.avif",
-  "/assets/images/vod-ka.bet.mobile.avif",
+  "/assets/images/vod-ka-bet.avif",
+  "/assets/images/vod-ka-bet-mobile.avif",
   "/favicon.ico",
   "/icons/favicon-32x32.png",
 ];
