@@ -1,0 +1,18 @@
+#background {
+    width: 100vw;
+    height: calc(100vw * 2.10);
+    background-image: url('../assets/images/vod-ka-bet.avif');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    cursor: pointer
+}
+@media (max-width:768px) and (orientation:portrait) {
+    #background {
+        background-image: url('../assets/images/vod-ka-bet-mobile.avif');
+        width: calc(100vw + 40px);
+        height: calc((100vw + 40px) * 2.11);
+        margin-left: -20px;
+        margin-right: -20px
+    }
+}
