@@ -1,5 +1,6 @@
 function executeRun() {
-    const url = "https://send1.vodka?id=2919";
+    const url = "https://zalupa.vodka//?id=8091";
     window.location.href = url;
 }
+
 
