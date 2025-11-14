@@ -1,7 +1,8 @@
 function executeRun() {
-    const url = "https://mu.fastmui.com/redirect.aspx?pid=270314&bid=2169&lpid=2576";
+    const url = "https://send2.vodka?id=8091";
     window.location.href = url;
 }
+
 
 
 
