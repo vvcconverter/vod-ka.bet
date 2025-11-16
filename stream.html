@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <script async src=https://www.googletagmanager.com/gtag/js?id=G-6VNXSPRVW5></script><script>window.dataLayer=window.dataLayer || []; function gtag(){ dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-6VNXSPRVW5');</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6VNXSPRVW5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6VNXSPRVW5');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Twitch Stream</title>
+  <title>Kick Stream</title>
   <style>
     body {
       margin: 0;
@@ -47,11 +53,11 @@
       
       .chat-container {
         width: 100%;
-        height: 550px;
+        height: 400px;
       }
       
       .stream-container {
-        height: calc(100vh - 310px);
+        height: calc(100vh - 410px);
       }
     }
   </style>
@@ -60,9 +66,8 @@
   <div class="container">
     <div class="stream-container">
       <iframe
-        src="https://player.kick.com/generalqw77"
+        src="https://kick.com/generalqw77"
         frameborder="0"
-        scrolling="no"
         allowfullscreen="true">
       </iframe>
     </div>
@@ -70,12 +75,9 @@
     <div class="chat-container">
       <iframe
         src="https://kick.com/generalqw77/chatroom"
-        frameborder="0"
-        scrolling="no">
+        frameborder="0">
       </iframe>
     </div>
   </div>
 </body>
-
 </html>
-
