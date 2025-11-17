@@ -15,4 +15,9 @@
         <lastmod>2025-11-01</lastmod>
         <priority>1.00</priority>https://vod-ka.bet/external-links.html
     </url>
+     <url>
+        <loc>https://vod-ka.bet/stream.html</loc>
+        <lastmod>2025-11-01</lastmod>
+        <priority>1.00</priority>
+    </url>
 </urlset>
