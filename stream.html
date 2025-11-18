@@ -38,6 +38,12 @@
     <link as="script" href="image/Carousel.js" rel="preload" />
     <title>Twitch (true) stream — Vodka bet Casino license CURACAO 2025.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "vodka_bet"
+  });
+</script>
   <style>
     body {
       margin: 0;
@@ -92,6 +98,7 @@
         allowfullscreen="true">
       </iframe>
     </div>
+
     <div class="chat-container">
       <iframe
         src="https://www.twitch.tv/embed/vodka_bet/chat?parent=vod-ka.bet"
@@ -101,11 +108,5 @@
     </div>
   </div>
   <div id="twitch-embed"></div>
-<script src="https://player.twitch.tv/js/embed/v1.js"></script>
-<script type="text/javascript">
-  new Twitch.Player("twitch-embed", {
-    channel: "vodka_bet"
-  });
-</script>
 </body>
 </html>
