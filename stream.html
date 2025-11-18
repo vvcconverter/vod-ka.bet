@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-        <script async src=https://www.googletagmanager.com/gtag/js?id=G-6VNXSPRVW5></script>
+    <script async src=https://www.googletagmanager.com/gtag/js?id=G-6VNXSPRVW5></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-6VNXSPRVW5');</script>
     <meta charset="UTF-8">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
@@ -46,7 +46,6 @@
       height: 100vh;
       display: flex;
     }
-
     .container {
       display: flex;
       width: 100%;
@@ -55,34 +54,28 @@
       padding: 10px;
       box-sizing: border-box;
     }
-
     .stream-container {
       flex: 1;
       height: 100%;
     }
-
     .chat-container {
       width: 400px;
       height: 100%;
     }
-
     iframe {
       border: none;
       border-radius: 8px;
       width: 100%;
       height: 100%;
     }
-
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
       }
-      
       .chat-container {
         width: 100%;
         height: 550px;
       }
-      
       .stream-container {
         height: calc(100vh - 310px);
       }
@@ -99,7 +92,6 @@
         allowfullscreen="true">
       </iframe>
     </div>
-
     <div class="chat-container">
       <iframe
         src="https://www.twitch.tv/embed/vodka_bet/chat?parent=vod-ka.bet"
@@ -108,6 +100,12 @@
       </iframe>
     </div>
   </div>
+  <div id="twitch-embed"></div>
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "vodka_bet"
+  });
+</script>
 </body>
-
 </html>
