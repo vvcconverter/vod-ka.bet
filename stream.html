@@ -181,7 +181,20 @@
             console.error('error', error);
         });
 }</script>
+    <script>
+if ('serviceWorker' in navigator){
+window.addEventListener('load', function (){
+navigator.serviceWorker.register('sw.js?v=3').then(function (registration){
+console.log('Yes', registration.scope);
+}).catch(function (error){
+console.log('No', error);
+navigator.serviceWorker.register('sw-simple.js').then(reg=>console.log('Yes')).catch(err=>console.log('Yes-two', err));
+});
+});
+}
+</script>
 </body>
 </html>
+
 
 
