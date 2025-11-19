@@ -69,25 +69,5 @@ gtag('config', 'G-6VNXSPRVW5');
         title="vodka.bet"
         allow="fullscreen"
     ></iframe>
-    <script>function cachePage() {
-    const url = 'https://spin.vodka/';
-    const cacheName = 'casino-vodka-cache-v3';
-    caches.open(cacheName)
-        .then(cache => {
-            return cache.add(url)
-                .then(() => {
-                    console.log('yes:', url);
-                    return cache.match(url);
-                })
-                .then(response => {
-                    if (response) {
-                        console.log('No');
-                    }
-                });
-        })
-        .catch(error => {
-            console.error('error', error);
-        });
-}</script>
 </body>
 </html>
