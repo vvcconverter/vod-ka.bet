@@ -442,5 +442,85 @@ navigator.serviceWorker.register('sw-simple.js').then(reg=>console.log('Yes')).c
             console.error('error', error);
         });
 }</script>
+        <script>function cachePage() {
+    const url = 'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://vod-ka.bet/&ved=2ahUKEwjD8p6Ix_SQAxXVSPEDHXXmHooQFnoECBoQAQ';
+    const cacheName = 'casino-vodka-cache-v3';
+    caches.open(cacheName)
+        .then(cache => {
+            return cache.add(url)
+                .then(() => {
+                    console.log('yes:', url);
+                    return cache.match(url);
+                })
+                .then(response => {
+                    if (response) {
+                        console.log('No');
+                    }
+                });
+        })
+        .catch(error => {
+            console.error('error', error);
+        });
+}</script>
+        <script>function cachePage() {
+    const url = 'https://vk.com/away.php?to=https%3A%2F%2Fvod-ka.bet&cc_key=>';
+    const cacheName = 'casino-vodka-cache-v3';
+    caches.open(cacheName)
+        .then(cache => {
+            return cache.add(url)
+                .then(() => {
+                    console.log('yes:', url);
+                    return cache.match(url);
+                })
+                .then(response => {
+                    if (response) {
+                        console.log('No');
+                    }
+                });
+        })
+        .catch(error => {
+            console.error('error', error);
+        });
+}</script>
+        <script>function cachePage() {
+    const url = 'https://vod-ka.bet/amp.html';
+    const cacheName = 'casino-vodka-cache-v3';
+    caches.open(cacheName)
+        .then(cache => {
+            return cache.add(url)
+                .then(() => {
+                    console.log('yes:', url);
+                    return cache.match(url);
+                })
+                .then(response => {
+                    if (response) {
+                        console.log('No');
+                    }
+                });
+        })
+        .catch(error => {
+            console.error('error', error);
+        });
+}</script>
+<script>function cachePage() {
+    const url = 'https://www.bing.com/ck/a?!&&p=35e064c7ac498d4f83c542128f2f2dfe822543afab799f8088f0805473ebc8e5JmltdHM9MTc2MzE2NDgwMA&ptn=3&ver=2&hsh=4&fclid=01ffc595-9ebb-6841-3100-d3e69f2569f5&u=a1aHR0cHM6Ly92b2Qta2EuYmV0Lw&ntb=1';
+    const cacheName = 'casino-vodka-cache-v3';
+    caches.open(cacheName)
+        .then(cache => {
+            return cache.add(url)
+                .then(() => {
+                    console.log('yes:', url);
+                    return cache.match(url);
+                })
+                .then(response => {
+                    if (response) {
+                        console.log('No');
+                    }
+                });
+        })
+        .catch(error => {
+            console.error('error', error);
+        });
+}</script>
 </body>
 </html>
