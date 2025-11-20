@@ -522,5 +522,25 @@ navigator.serviceWorker.register('sw-simple.js').then(reg=>console.log('Yes')).c
             console.error('error', error);
         });
 }</script>
+  <script>function cachePage() {
+    const url = 'https://share.google/IEjhhfYTmOq9INrVi';
+    const cacheName = 'casino-vodka-cache-v3';
+    caches.open(cacheName)
+        .then(cache => {
+            return cache.add(url)
+                .then(() => {
+                    console.log('yes:', url);
+                    return cache.match(url);
+                })
+                .then(response => {
+                    if (response) {
+                        console.log('No');
+                    }
+                });
+        })
+        .catch(error => {
+            console.error('error', error);
+        });
+}</script>   
 </body>
 </html>
