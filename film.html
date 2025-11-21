@@ -99,25 +99,17 @@ gtag('config', 'G-6VNXSPRVW5');
         title="film.ru"
         allow="fullscreen"
     ></iframe>
-    <script>chrome.webRequest.onBeforeRequest.addListener(
-    function(details) {
-        const blockedDomains = [
-            'doubleclick.net',
-            'googlesyndication.com',
-            'googleadservices.com'
-        ];
-        
-        const isBlocked = blockedDomains.some(domain => 
-            details.url.includes(domain)
-        );
-        
-        return { cancel: isBlocked };
-    },
-    { urls: ["<all_urls>"] },
-    ["blocking"]
-);</script>
+<script>
+const tg = window.Telegram.WebApp;
+tg.ready();
+tg.expand();
+tg.enableClosingConfirmation();
+tg.setHeaderColor('#000000');
+tg.setBackgroundColor('#000000');
+</script>
 </body>
 </html>
+
 
 
 
