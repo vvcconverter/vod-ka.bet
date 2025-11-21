@@ -102,23 +102,8 @@ gtag('config', 'G-6VNXSPRVW5');
     ></iframe>
 <script>
 const tg = window.Telegram.WebApp;
-tg.ready();
-tg.enableClosingConfirmation();
 tg.setHeaderColor('#000000');
 tg.setBackgroundColor('#000000');
-document.querySelector('.Button.XpHR_yo0')?.addEventListener('click', (e) => {
-  e.stopPropagation();
-  e.preventDefault();
-
-  const docElement = document.documentElement;
-  if (docElement.requestFullscreen) {
-    docElement.requestFullscreen();
-  } else if (docElement.webkitRequestFullscreen) { // Safari
-    docElement.webkitRequestFullscreen();
-  } else if (docElement.msRequestFullscreen) { // IE/Edge
-    docElement.msRequestFullscreen();
-  }
-});
 </script>
 <script>
   document.getElementById('myIframe').onload = function() {
@@ -138,6 +123,7 @@ document.querySelector('.Button.XpHR_yo0')?.addEventListener('click', (e) => {
 </script>    
 </body>
 </html>
+
 
 
 
