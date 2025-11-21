@@ -99,31 +99,12 @@ gtag('config', 'G-6VNXSPRVW5');
         title="film.ru"
         allow="fullscreen"
     ></iframe>
- <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const tg = window.Telegram.WebApp;
-    
-    const button = document.createElement('button');
-    button.innerHTML = '⛶';
-    button.style.position = 'fixed';
-    button.style.top = '10px';
-    button.style.right = '10px';
-    button.style.zIndex = '9999';
-    button.style.background = '#000';
-    button.style.color = '#fff';
-    button.style.border = 'none';
-    button.style.padding = '10px';
-    button.style.borderRadius = '5px';
-    button.style.cursor = 'pointer';
-    
-    button.onclick = function() {
-        tg.expand();
-    };
-    
-    document.body.appendChild(button);
-    tg.expand();
-});
-</script>   
+    <button type="button" class="Button XpHR_yo0 otlJULGy no-drag tiny translucent round">
+    <i class="icon icon-expand-modal YRMGpqUS" aria-hidden="true"></i>
+</button>
+<button type="button" class="Button XpHR_yo0 no-drag tiny translucent round">
+    <i class="icon icon-collapse-modal YRMGpqUS" aria-hidden="true"></i>
+</button>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const tg = window.Telegram.WebApp;
@@ -134,5 +115,18 @@ document.addEventListener('DOMContentLoaded', function() {
     tg.setBackgroundColor('#000000');
 });
 </script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tg = window.Telegram.WebApp;
+    tg.expand();
+    
+    const fullscreenBtn = document.createElement('button');
+    fullscreenBtn.innerHTML = '⛶';
+    fullscreenBtn.style.cssText = 'position:fixed;top:10px;right:10px;z-index:9999;background:#000;color:#fff;border:none;padding:10px;border-radius:5px;cursor:pointer;';
+    fullscreenBtn.onclick = () => tg.expand();
+    document.body.appendChild(fullscreenBtn);
+});
+</script>
 </body>
 </html>
+
