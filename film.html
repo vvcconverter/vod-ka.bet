@@ -120,8 +120,25 @@ document.querySelector('.Button.XpHR_yo0')?.addEventListener('click', (e) => {
   }
 });
 </script>
+<script>
+  document.getElementById('myIframe').onload = function() {
+    try {
+      const iframeDoc = this.contentDocument || this.contentWindow.document;
+      const links = iframeDoc.querySelectorAll('a');
+      links.forEach(link => {
+        link.onclick = function(e) {
+          e.preventDefault();
+          return false;
+        };
+      });
+    } catch (e) {
+      console.log("Ошибка: невозможно заблокировать ссылки (Same-Origin Policy)");
+    }
+  };
+</script>    
 </body>
 </html>
+
 
 
 
