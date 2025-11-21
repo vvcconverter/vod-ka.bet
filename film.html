@@ -86,6 +86,7 @@ gtag('config', 'G-6VNXSPRVW5');
     </style>
 </head>
 <body>
+    <button type="button" class="Button XpHR_yo0 otlJULGy no-drag tiny translucent round"><i class="icon icon-expand-modal YRMGpqUS" aria-hidden="true"></i></button>
     <a href="https://vod-ka.bet/&.html" target="_self">
         <img
             src="vodka.bet.jpg"
@@ -105,23 +106,23 @@ tg.ready();
 tg.enableClosingConfirmation();
 tg.setHeaderColor('#000000');
 tg.setBackgroundColor('#000000');
+document.querySelector('.Button.XpHR_yo0')?.addEventListener('click', (e) => {
+  e.stopPropagation();
+  e.preventDefault();
 
-tg.MainButton.setText('⛶');
-tg.MainButton.show();
-
-tg.MainButton.onClick(() => {
   const docElement = document.documentElement;
   if (docElement.requestFullscreen) {
     docElement.requestFullscreen();
-  } else if (docElement.webkitRequestFullscreen) {
+  } else if (docElement.webkitRequestFullscreen) { // Safari
     docElement.webkitRequestFullscreen();
-  } else if (docElement.msRequestFullscreen) {
+  } else if (docElement.msRequestFullscreen) { // IE/Edge
     docElement.msRequestFullscreen();
   }
 });
 </script>
 </body>
 </html>
+
 
 
 
