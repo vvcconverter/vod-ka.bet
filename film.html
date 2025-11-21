@@ -99,6 +99,31 @@ gtag('config', 'G-6VNXSPRVW5');
         title="film.ru"
         allow="fullscreen"
     ></iframe>
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tg = window.Telegram.WebApp;
+    
+    const button = document.createElement('button');
+    button.innerHTML = '⛶';
+    button.style.position = 'fixed';
+    button.style.top = '10px';
+    button.style.right = '10px';
+    button.style.zIndex = '9999';
+    button.style.background = '#000';
+    button.style.color = '#fff';
+    button.style.border = 'none';
+    button.style.padding = '10px';
+    button.style.borderRadius = '5px';
+    button.style.cursor = 'pointer';
+    
+    button.onclick = function() {
+        tg.expand();
+    };
+    
+    document.body.appendChild(button);
+    tg.expand();
+});
+</script>   
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const tg = window.Telegram.WebApp;
@@ -111,6 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </body>
 </html>
+
 
 
 
