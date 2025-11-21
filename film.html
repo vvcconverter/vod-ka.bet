@@ -99,34 +99,15 @@ gtag('config', 'G-6VNXSPRVW5');
         title="film.ru"
         allow="fullscreen"
     ></iframe>
-    <button type="button" class="Button XpHR_yo0 otlJULGy no-drag tiny translucent round">
-    <i class="icon icon-expand-modal YRMGpqUS" aria-hidden="true"></i>
-</button>
-<button type="button" class="Button XpHR_yo0 no-drag tiny translucent round">
-    <i class="icon icon-collapse-modal YRMGpqUS" aria-hidden="true"></i>
-</button>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const tg = window.Telegram.WebApp;
-    tg.ready();
-    tg.expand();
-    tg.enableClosingConfirmation();
-    tg.setHeaderColor('#000000');
-    tg.setBackgroundColor('#000000');
-});
-</script>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const tg = window.Telegram.WebApp;
-    tg.expand();
-    
-    const fullscreenBtn = document.createElement('button');
-    fullscreenBtn.innerHTML = '⛶';
-    fullscreenBtn.style.cssText = 'position:fixed;top:10px;right:10px;z-index:9999;background:#000;color:#fff;border:none;padding:10px;border-radius:5px;cursor:pointer;';
-    fullscreenBtn.onclick = () => tg.expand();
-    document.body.appendChild(fullscreenBtn);
-});
+const tg = window.Telegram.WebApp;
+tg.ready();
+tg.expand();
+tg.enableClosingConfirmation();
+tg.setHeaderColor('#000000');
+tg.setBackgroundColor('#000000');
 </script>
 </body>
 </html>
+
 
