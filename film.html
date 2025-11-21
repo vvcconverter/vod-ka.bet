@@ -102,12 +102,28 @@ gtag('config', 'G-6VNXSPRVW5');
 <script>
 const tg = window.Telegram.WebApp;
 tg.ready();
-tg.expand();
 tg.enableClosingConfirmation();
 tg.setHeaderColor('#000000');
 tg.setBackgroundColor('#000000');
+const expandButton = document.createElement('button');
+expandButton.textContent = 'Развернуть на весь экран';
+expandButton.style.position = 'fixed';
+expandButton.style.bottom = '20px';
+expandButton.style.right = '20px';
+expandButton.style.zIndex = '1000';
+expandButton.style.padding = '10px';
+expandButton.style.backgroundColor = '#000000';
+expandButton.style.color = '#ffffff';
+expandButton.style.border = 'none';
+expandButton.style.borderRadius = '5px';
+expandButton.style.cursor = 'pointer';
+expandButton.addEventListener('click', () => {
+  tg.expand();
+});
+document.body.appendChild(expandButton);
 </script>
 </body>
 </html>
+
 
 
