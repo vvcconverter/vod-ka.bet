@@ -100,35 +100,29 @@ gtag('config', 'G-6VNXSPRVW5');
         allow="fullscreen"
     ></iframe>
 <script>
-tg = window.Telegram.WebApp;
+const tg = window.Telegram.WebApp;
 tg.ready();
 tg.enableClosingConfirmation();
 tg.setHeaderColor('#000000');
 tg.setBackgroundColor('#000000');
-// Создаём кнопку для разворачивания на весь экран
-const expandButton = document.createElement('button');
-expandButton.textContent = 'Развернуть на весь экран';
-expandButton.style.position = 'fixed';
-expandButton.style.bottom = '20px';
-expandButton.style.right = '20px';
-expandButton.style.zIndex = '1000';
-expandButton.style.padding = '10px';
-expandButton.style.backgroundColor = '#000000';
-expandButton.style.color = '#ffffff';
-expandButton.style.border = 'none';
-expandButton.style.borderRadius = '5px';
-expandButton.style.cursor = 'pointer';
+
+tg.MainButton.setText('⛶');
+tg.MainButton.show();
+
 tg.MainButton.onClick(() => {
-  if (tg.isExpanded) {
-    tg.close(); 
-  } else {
-    tg.expand();
+  const docElement = document.documentElement;
+  if (docElement.requestFullscreen) {
+    docElement.requestFullscreen();
+  } else if (docElement.webkitRequestFullscreen) {
+    docElement.webkitRequestFullscreen();
+  } else if (docElement.msRequestFullscreen) {
+    docElement.msRequestFullscreen();
   }
 });
-document.body.appendChild(expandButton);
 </script>
 </body>
 </html>
+
 
 
 
