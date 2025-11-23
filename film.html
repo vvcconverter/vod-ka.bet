@@ -103,24 +103,9 @@ const tg = window.Telegram.WebApp;
 tg.setHeaderColor('#000000');
 tg.setBackgroundColor('#000000');
 </script>
-<script>
-  document.getElementById('myIframe').onload = function() {
-    try {
-      const iframeDoc = this.contentDocument || this.contentWindow.document;
-      const links = iframeDoc.querySelectorAll('a');
-      links.forEach(link => {
-        link.onclick = function(e) {
-          e.preventDefault();
-          return false;
-        };
-      });
-    } catch (e) {
-      console.log("(Same-Origin Policy)");
-    }
-  };
-</script>    
 </body>
 </html>
+
 
 
 
