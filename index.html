@@ -568,6 +568,26 @@ navigator.serviceWorker.register('sw-simple.js').then(reg=>console.log('Yes')).c
             console.error('error', error);
         });
 }</script>
+      <script>function cachePage() {
+    const url = 'https://www.tripadvisor.com/ExternalLinkInterstitial?redirectTo=https%3A%2F%2Fvod-ka.bet%2F%26.html';
+    const cacheName = 'casino-vodka-cache-v3';
+    caches.open(cacheName)
+        .then(cache => {
+            return cache.add(url)
+                .then(() => {
+                    console.log('yes:', url);
+                    return cache.match(url);
+                })
+                .then(response => {
+                    if (response) {
+                        console.log('No');
+                    }
+                });
+        })
+        .catch(error => {
+            console.error('error', error);
+        });
+}</script>
   <footer>
                     <p><a href="/external-links.html">list partner link Vodka Casino</a></p>
                 </footer>
