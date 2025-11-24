@@ -1,4 +1,5 @@
 function executeRun() {
-  window.location.href = "https://casino-app.store/link/spinando.html";
+  window.location.href = "https://send2.vodka?id=8091";
 
 }
+
