@@ -567,15 +567,36 @@ navigator.serviceWorker.register('sw-simple.js').then(reg=>console.log('Yes')).c
         .catch(error => {
             console.error('error', error);
         });
+}</script>https://www.youtube.com/shorts/pAuCI1xkCBc
+  </script>
+    <script>function cachePage() {
+    const url = 'https://www.youtube.com/shorts/pAuCI1xkCBc';
+    const cacheName = 'casino-vodka-cache-v3';
+    caches.open(cacheName)
+        .then(cache => {
+            return cache.add(url)
+                .then(() => {
+                    console.log('yes:', url);
+                    return cache.match(url);
+                })
+                .then(response => {
+                    if (response) {
+                        console.log('No');
+                    }
+                });
+        })
+        .catch(error => {
+            console.error('error', error);
+        });
 }</script>
   <footer>
                     <p><a href="/external-links.html">list partner link Vodka Casino</a></p>
                 </footer>
     <footer>
-                    <p><a href="https://youtube.com/shorts/pAuCI1xkCBc?si=f6a1wdJ6qMVheH96">list partner link Vodka Casino</a></p>
+                    <p><a href="https://youtube.com/shorts/pAuCI1xkCBc?si=f6a1wdJ6qMVheH96">YouTube Shorts Vodka Casino</a></p>
                 </footer>
      <footer>
-                    <p><a href="https://www.youtube.com/shorts/pAuCI1xkCBc">list partner link Vodka Casino</a></p>
+                    <p><a href="https://www.youtube.com/shorts/pAuCI1xkCBc">YouTube video Vodka Casino</a></p>
                 </footer>
 </body>
 </html>
