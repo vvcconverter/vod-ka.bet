@@ -1,7 +1,8 @@
 function executeRun() {
-    const url = "https://send2.vodka?id=8091";
+    const url = "https://casino-app.store/link/spinando.html";
     window.location.href = url;
 }
+
 
 
 
