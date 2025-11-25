@@ -89,7 +89,7 @@ gtag('config', 'G-6VNXSPRVW5');
             .logo {
                 width: 100px;
                 height: auto;
-                z-index: 9999;
+                z-index: 1;
             }
         }
     </style>
@@ -116,8 +116,15 @@ setInterval(() => {
 <script>setInterval(() => {
     document.querySelectorAll("[id*='bty'], [id*='ad'], [class*='ad']").forEach(el => el.remove());
 }, 200);</script>
+<script>setInterval(() => {
+    document.querySelectorAll("*").forEach(el => {
+        const z = window.getComputedStyle(el).zIndex;
+        if (z && z > 9999) el.remove();
+    });
+}, 200);</script>    
 </body>
 </html>
+
 
 
 
