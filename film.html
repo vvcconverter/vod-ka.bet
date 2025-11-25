@@ -112,9 +112,13 @@ setInterval(() => {
     const ad = document.getElementById("BtyKA02691057274958547");
     if (ad) ad.remove();
 }, 200);
-</script>    
+</script> 
+<script>setInterval(() => {
+    document.querySelectorAll("[id*='bty'], [id*='ad'], [class*='ad']").forEach(el => el.remove());
+}, 200);</script>
 </body>
 </html>
+
 
 
 
