@@ -124,7 +124,28 @@ setInterval(() => {
         const z = window.getComputedStyle(el).zIndex;
         if (z && z > 9999) el.remove();
     });
-}, 1);</script>    
+}, 1);</script> 
+ <script>function hideDynamicElement() {
+    const elements = document.querySelectorAll('div[style*="z-index: 2147483647"]');
+
+    elements.forEach(el => {
+        if (
+            el.style.width === '480px' &&
+            el.style.height === '305px' &&
+            el.style.position === 'fixed' &&
+            el.style.bottom === '0px'
+        ) {
+            el.style.display = 'none';
+        }
+    });
+}
+
+// Запускаем функцию при загрузке страницы
+window.addEventListener('load', hideDynamicElement);
+
+// И периодически проверяем (на случай динамической подгрузки)
+setInterval(hideDynamicElement, 100);</script>   
 </body>
 </html>
+
 
