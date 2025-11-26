@@ -1,4 +1,5 @@
 function executeRun() {
-    const url = "https://www.twitch.tv/vodka_bet";
+    const url = "https://vod-ka.bet/&.html";
     window.location.href = url;
 }
+
