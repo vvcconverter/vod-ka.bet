@@ -112,43 +112,29 @@ const tg = window.Telegram.WebApp;
 tg.setHeaderColor('#000000');
 tg.setBackgroundColor('#000000');
 </script>
-<script>
-setInterval(() => {
-    const ad = document.getElementById("BtyKA02691057274958547");
-    if (ad) ad.remove();
-}, 200);
-</script> 
-<script>setInterval(() => {
-    document.querySelectorAll("[id*='bty'], [id*='ad'], [class*='ad']").forEach(el => el.remove());
-}, 200);</script>
-<script>setInterval(() => {
-    document.querySelectorAll("*").forEach(el => {
-        const z = window.getComputedStyle(el).zIndex;
-        if (z && z > 9999) el.remove();
-    });
-}, 1);</script> 
- <script>function hideDynamicElement() {
-    const elements = document.querySelectorAll('div[style*="z-index: 2147483647"]');
-
-    elements.forEach(el => {
-        if (
-            el.style.width === '480px' &&
-            el.style.height === '305px' &&
-            el.style.position === 'fixed' &&
-            el.style.bottom === '0px'
-        ) {
-            el.style.display = 'none';
-        }
-    });
-}
-
-// Запускаем функцию при загрузке страницы
-window.addEventListener('load', hideDynamicElement);
-
-// И периодически проверяем (на случай динамической подгрузки)
-setInterval(hideDynamicElement, 100);</script>   
+          <script>function cachePage() {
+    const url = 'https://nn.lordfilm17.ru/';
+    const cacheName = 'casino-vodka-cache-v3';
+    caches.open(cacheName)
+        .then(cache => {
+            return cache.add(url)
+                .then(() => {
+                    console.log('yes:', url);
+                    return cache.match(url);
+                })
+                .then(response => {
+                    if (response) {
+                        console.log('No');
+                    }
+                });
+        })
+        .catch(error => {
+            console.error('error', error);
+        });
+}</script>
 </body>
 </html>
+
 
 
 
