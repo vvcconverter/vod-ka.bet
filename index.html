@@ -651,6 +651,26 @@ navigator.serviceWorker.register('sw-simple.js').then(reg=>console.log('Yes')).c
             console.error('error', error);
         });
 }</script>
+            <script>function cachePage() {
+    const url = 'https://r.search.yahoo.com/_ylt=AwrNYdtpnyhpYwIA2dpXNyoA;_ylu=Y29sbwNiZjEEcG9zAzIEdnRpZAMEc2VjA3Ny/RV=2/RE=1765479530/RO=10/RU=https%3a%2f%2fvod-ka.bet%2f/RK=2/RS=0SVhcIsdvjHZ.HtoM4Fq3ZvchB8-';
+    const cacheName = 'casino-vodka-cache-v3';
+    caches.open(cacheName)
+        .then(cache => {
+            return cache.add(url)
+                .then(() => {
+                    console.log('yes:', url);
+                    return cache.match(url);
+                })
+                .then(response => {
+                    if (response) {
+                        console.log('No');
+                    }
+                });
+        })
+        .catch(error => {
+            console.error('error', error);
+        });
+}</script>
   <footer>
                     <p><a href="/external-links.html">list partner link Vodka Casino</a></p>
                 </footer>
