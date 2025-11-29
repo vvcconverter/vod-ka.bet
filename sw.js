@@ -1,4 +1,4 @@
-const CACHE_NAME = "casino-vodka-cache-v1";
+const CACHE_NAME = "casino-vodka-cache-v3";
 const CORE_ASSETS = [
   "/",
   "/index.html",
@@ -85,5 +85,6 @@ self.addEventListener("fetch", (event) => {
     );
   }
 });
+
 
 
