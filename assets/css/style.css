@@ -1,7 +1,7 @@
 #background {
     width: 100vw;
     height: calc(100vw * 2.10);
-    background-image: url('../assets/images/vod-ka-bet.avif');
+    background-image: url('https://lh7-rt.googleusercontent.com/docsz/AD_4nXeoWrsJgubvmoxyny7irXhrUbAALrtesAlGYMNEhDi4fC8AWm5wNl5k8Y7yeWcu2X7bUCgY1xI_poZGsN5le7WsOpaYKuTEt2_gE08ixDVKWI3HJv7euQvzlPO01fkBIvgtDnW-sIhjoLZmZ4LSkPgaHqe1xo0?key=StArsw533vaWZ5VjDsu_1Q');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: top center;
@@ -16,3 +16,4 @@
         margin-right: -20px
     }
 }
+
