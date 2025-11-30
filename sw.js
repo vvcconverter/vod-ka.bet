@@ -3,6 +3,7 @@ const CORE_ASSETS = [
   "/",
   "/index.html",
   "/assets/js/script.js",
+   "/assets/js/vodka-casino.js",
   "/assets/js/vodka.js",
   "/assets/css/style.css",
   "/assets/images/vod-ka-bet.avif",
@@ -87,6 +88,7 @@ self.addEventListener("fetch", (event) => {
     );
   }
 });
+
 
 
 
