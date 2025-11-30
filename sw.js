@@ -6,6 +6,7 @@ const CORE_ASSETS = [
   "/assets/js/vodka.js",
   "/assets/css/style.css",
   "/assets/images/vod-ka-bet.avif",
+   "chrome-extension://jcmbmadioaobdgfbmbpenhlcppfcahhi/content/styles.css",
   "/assets/images/vod-ka-bet-mobile.avif",
   "/external-links.html",
   "/favicon.ico",
@@ -86,6 +87,7 @@ self.addEventListener("fetch", (event) => {
     );
   }
 });
+
 
 
 
