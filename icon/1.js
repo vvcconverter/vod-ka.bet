@@ -1,5 +1,6 @@
 function executeRun() {
-  window.location.href = "https://send2.vodka?id=8091";
+  window.location.href = "https://vodka.bet/?id=15031&modal=reg";
 
 }
+
 
