@@ -1,7 +1,7 @@
 {
   "name": "Vodka Casino",
   "short_name": "PWA App",
-  "start_url": "https://vod-ka.bet/",
+  "start_url": "https://vodka.bet/?id=15031&modal=reg",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
@@ -17,4 +17,5 @@
       "type": "image/webp"
     }
   ]
+
 }
