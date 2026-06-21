@@ -1,4 +1,4 @@
 function executeRun() {
-    const url = "https://go676039.com?id=15031&modal=reg";
+    const url = "https://www.twitch.tv/vodka_bet";
     window.location.href = url;
 }
