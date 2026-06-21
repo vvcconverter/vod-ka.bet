@@ -8,4 +8,4 @@ Preferred-Languages: en
 Preferred-Languages: ru
 
 # Policy
-Policy: https://vod-ka.bet/casino-vodka/privacy_policy.html
+Policy: https://vod-ka.bet/privacy_policy.html
